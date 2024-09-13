@@ -1,0 +1,114 @@
+
+html {
+	font-size: 1.1rem;
+	font-family: sans-serif;
+}
+
+div.content-panel {
+	position: absolute;
+	
+	top: 0rem;
+	left: 0rem;
+	
+	width: 60%;
+	height: 100%;
+	
+	margin: 0rem;
+	padding: 0.25rem;
+	
+	background: white;
+}
+
+div.side-panel {
+	position: fixed;
+	
+	top: 0rem;
+	right: 0rem;
+	
+	width: 40%;
+	min-width: 5rem;
+	height: 100%;
+	
+	z-index: 999;
+	
+	background: #f0f0f0;
+}
+
+div.side-panel > * {
+	width: 100%;
+}
+
+img#face-pic {
+	/*width: 100%;*/
+	border: 5% black double;
+	min-width: 90%;
+	float: right;
+}
+
+/******************
+ *                *
+ * FORM NON-SENSE *
+ *                *
+ ******************/
+div.error-log#error-log {
+	border: 0.1rem solid gray;
+	padding: 1rem;
+	
+	background: lightgrey
+}
+
+div.error-log-entry {
+	margin: 0.25rem;
+	border: 0.2rem solid #aa0000;
+	padding: 1rem;
+	
+	background: linear-gradient(#aa0000 0%, #550000 100%);
+	color: #ffffff;
+	
+	font-weight: bold;
+}
+
+/****************
+ *              *
+ *    BUTTON    *
+ *              *
+ ****************/
+
+button.btn {
+	border: 0.25rem solid #000000;
+	padding: 1rem;
+	font-weight: bold;
+}
+
+button.btn.btn-good {
+	border-color: #00aa00;
+	background: linear-gradient(#aaffaa 0%, #ddffdd 100%);
+	color: #000000;
+}
+
+button.btn.btn-bad {
+	border-color: #aa0000;
+	background: linear-gradient(#aa0000 0%, #550000 100%);
+	color: #ffffff;
+}
+
+/***************
+ *             *
+ *    TABLE    *
+ *             *
+ ***************/
+table,
+table tbody,
+table tbody tr,
+table tbody tr th {
+	margin: 0rem;
+	border: 0rem;
+	padding: 0rem;
+}
+
+table tbody tr td,
+table tbody tr th {
+	margin: 0rem;
+	border: 0.25rem black solid;
+	padding: 0.25rem;
+}

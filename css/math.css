@@ -1,0 +1,32 @@
+div.math {
+
+	padding: 1rem;
+
+	font-size: 1.25rem;
+	
+	border: 1rem black solid;
+	background-color: #f0f0f0;
+}
+
+div.math .math-name {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+div.math .math-area {
+	font-family: Serif;
+	padding: 1rem;
+	
+	border: 0.25rem #a0a0a0 solid;
+	background: #e0e0e0;
+}
+
+div.math .math-area {
+	font-family: Serif;
+	margin: 0.25rem;
+}
+
+div.math .math-area .math-mean {
+	
+	text-decoration: overline;
+}

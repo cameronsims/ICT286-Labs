@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ICT286 - Lab 4: Exercise 5-7-10</title>
+		
+		<link rel="stylesheet" href="../../css/style.css"/>
+		<script src="../../js/lab4.js"></script>
+	</head>
+	
+	<body>
+		<h1>ICT286 - Lab 4: Exercise 5-7-10</h1>
+		
+		<h3>Student Form Submitter</h3>
+		<form action="/">
+			<label><b>Student Name:</b> <input type="text" name="stu-name" id="stu-name" placeholder="Student Name" onblur="lab4_annoy()"/></label><p/>
+			<b>Campus:</b><br/>
+			<label>Murdoch:<input type="radio"    name="stu-campus" id="stu-campus-murdoch" value="Murdoch"/></label><br/>
+			<label>Rockingham:<input type="radio" name="stu-campus" id="stu-campus-rockingham" value="Rockingham"/></label><p/>
+			
+			<b>Units:</b><br/>
+			<label>ICT159: <input type="checkbox" name="stu-unit" value="ICT159"/></label><br/>
+			<label>ICT167: <input type="checkbox" name="stu-unit" value="ICT167"></label><br/>
+			<label>ICT170: <input type="checkbox" name="stu-unit" value="ICT170"></label><br/>
+			<label>ICT283: <input type="checkbox" name="stu-unit" value="ICT283"></label><br/>
+			<label>ICT286: <input type="checkbox" name="stu-unit" value="ICT286"/></label><br/>
+			<label>ICT310: <input type="checkbox" name="stu-unit" value="ICT310"/></label><p/>
+			
+			<b>Course:</b>
+			<select name="stu-course" id="stu-course">
+				<option name="stu-course" value="stu-course-mwad">Mobile and Web Application Development</option>
+				<option name="stu-course" value="stu-course-csci">Computer Science</option>
+				<option name="stu-course" value="stu-course-gmtc">Games Technology</option>
+				<option name="stu-course" value="stu-course-isys">Information Systems</option>
+			</select><p/>
+		</form>
+		
+		<button class="btn" onclick="lab4_submit()">Submit Fourm</button>
+		<button class="btn btn-good" onclick="lab4_check()">Check User Input</button><p/>
+		<button class="btn btn-bad" onclick="lab4_clear()">Clear User Inputs</button>
+		
+		<div class="error-log" id="error-log">
+			<!-- Errors are logged here... -->
+		</div>
+	</body>
+
+</html>
