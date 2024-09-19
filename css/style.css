@@ -112,3 +112,19 @@ table tbody tr th {
 	border: 0.25rem black solid;
 	padding: 0.25rem;
 }
+
+/****************
+ *              *
+ * SPAN COLOURS *
+ *              *
+ ****************/
+.lab-link {
+ 
+}
+span.lab-mark {
+	color: green;
+	font-weight: bold;
+}
+span.lab-content {
+	
+}
