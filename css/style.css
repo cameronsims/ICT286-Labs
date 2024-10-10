@@ -4,6 +4,10 @@ html {
 	font-family: sans-serif;
 }
 
+iframe {
+	border: 0rem;
+}
+
 div.content-panel {
 	position: absolute;
 	
