@@ -11,9 +11,15 @@ const lab9_getHTML = function(html) {
 		if (xhr.readyState == 4 && xhr.status == 200) {
 			// Blah blah blah.
 			let newTxt = xhr.responseText;
-			let oldTxt = $("#html-placement").text();
-			let txt = newTxt + oldTxt;
-			$("#html-placement").text(txt);
+			//let oldTxt = $("#html-placement").text();
+			//let txt = newTxt + oldTxt;
+			
+			let frag = document.createDocumentFragment();
+			let p = document.createElement("p");
+			p.innerHTML = newTxt;
+			frag.appendChild(p);
+			
+			$("#html-placement").append(frag);
 		}
 	};
 	
